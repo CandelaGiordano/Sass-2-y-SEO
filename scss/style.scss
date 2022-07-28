@@ -1,0 +1,72 @@
+//variables
+$colorPrincipal: #DB241D ;
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: $colorPrincipal;
+
+    h1{
+        padding: 0.1rem;
+        font-size: 2.3rem;
+    }
+
+   ul{
+    display: flex;
+   }
+    ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+   }
+}
+
+main{
+    background-image: url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-x: center;
+    grid-template-rows: 'parrafo'
+                        'img'
+                        'iniciarS';
+    div{
+        font-size: 1.3rem;
+        justify-content: flex-start;
+    }
+    div p{
+        grid-row: parrafo;
+        padding: 8rem 0rem 1.3rem 1rem;
+    }
+    div img{
+        grid-row: img;
+        width: 18%;
+        padding: 0.2rem 0rem 0rem 5rem;
+    }
+    div p a{
+        grid-row: iniciarS;
+        text-decoration: none;
+        background-color: $colorPrincipal;
+        color: black;
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 6.27rem;
+    }
+}
+
+footer{
+    background-color: $colorPrincipal;
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns: 'parrafo iconos';
+    p{
+        grid-column: parrafo;
+    }
+    div{
+        grid-column: iconos;     
+        
+        a img{
+            width: 4%;
+            padding: 0.3rem 0.5rem 0.3rem 0.1rem;
+        }
+    }
+}
