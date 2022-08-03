@@ -4,20 +4,26 @@ header {
   background-color: #DB241D; }
   header h1 {
     padding: 0.1rem;
-    font-size: 2.3rem; }
+    font-size: 2.3rem; 
+    }
   header ul {
     display: flex; }
   header ul li {
     list-style: none;
     font-size: 1.2rem;
     padding: 1.5rem; }
-
+  header ul li a{
+    text-decoration: none;
+    color: black;
+  }
 main {
   background-image: url(../img/fondo1.jpg);
   background-repeat: no-repeat;
   width: 100%;
   background-position-x: center;
-  grid-template-rows: 'parrafo' 'img' 'iniciarS'; }
+  grid-template-rows: 'parrafo'
+ 'img'
+ 'iniciarS'; }
   main div {
     font-size: 1.3rem;
     justify-content: flex-start; }
@@ -48,3 +54,13 @@ footer {
     footer div a img {
       width: 4%;
       padding: 0.3rem 0.5rem 0.3rem 0.1rem; }
+
+
+      /*estilo para metodo*/
+header h1 a{
+  color: black;
+  text-decoration: none;
+}
+.mainMetodo{
+  background: whitesmoke;
+}
